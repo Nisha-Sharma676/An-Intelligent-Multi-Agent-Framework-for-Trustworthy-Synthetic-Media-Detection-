@@ -1,0 +1,31 @@
+# Core numerical and data processing
+numpy
+pandas
+scipy
+
+# Deep learning
+torch
+torchvision
+pytorch-lightning
+torchmetrics
+
+# Machine learning and evaluation
+scikit-learn
+
+# Visualization and analysis
+matplotlib
+seaborn
+
+# Progress monitoring
+tqdm
+
+# Audio processing
+librosa
+soundfile
+
+# Video and image processing
+opencv-python
+
+# Utilities
+PyYAML
+tensorboard
