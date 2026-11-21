@@ -1,0 +1,112 @@
+{
+  "split": "dev",
+  "samples": 500,
+  "checkpoint": "proposed_model\\outputs\\proposed_reliability_best.pt",
+  "agent_calibration": {
+    "vv": {
+      "agent_accuracy": 0.746,
+      "reliability": {
+        "brier_score": 0.1709095643068389,
+        "ece_10_bins": 0.029097545146942138,
+        "bins": [
+          {
+            "bin": "0.5-0.6",
+            "count": 29,
+            "mean_predicted_reliability": 0.5944692245845137,
+            "observed_accuracy": 0.3448275862068966,
+            "absolute_gap": 0.2496416383776171
+          },
+          {
+            "bin": "0.6-0.7",
+            "count": 151,
+            "mean_predicted_reliability": 0.617779047678638,
+            "observed_accuracy": 0.609271523178808,
+            "absolute_gap": 0.008507524499830055
+          },
+          {
+            "bin": "0.7-0.8",
+            "count": 15,
+            "mean_predicted_reliability": 0.7538575649261474,
+            "observed_accuracy": 0.9333333333333333,
+            "absolute_gap": 0.17947576840718593
+          },
+          {
+            "bin": "0.8-0.9",
+            "count": 305,
+            "mean_predicted_reliability": 0.8316970743116785,
+            "observed_accuracy": 0.8426229508196721,
+            "absolute_gap": 0.010925876507993593
+          }
+        ]
+      }
+    },
+    "aa": {
+      "agent_accuracy": 0.778,
+      "reliability": {
+        "brier_score": 0.20224407141640718,
+        "ece_10_bins": 0.1719431204795837,
+        "bins": [
+          {
+            "bin": "0.9-1.0",
+            "count": 500,
+            "mean_predicted_reliability": 0.9499431204795837,
+            "observed_accuracy": 0.778,
+            "absolute_gap": 0.1719431204795837
+          }
+        ]
+      }
+    },
+    "av": {
+      "agent_accuracy": 0.746,
+      "reliability": {
+        "brier_score": 0.1893367084049331,
+        "ece_10_bins": 0.04845722758769985,
+        "bins": [
+          {
+            "bin": "0.6-0.7",
+            "count": 189,
+            "mean_predicted_reliability": 0.6708734811298431,
+            "observed_accuracy": 0.671957671957672,
+            "absolute_gap": 0.001084190827828846
+          },
+          {
+            "bin": "0.7-0.8",
+            "count": 311,
+            "mean_predicted_reliability": 0.7137501552173946,
+            "observed_accuracy": 0.7909967845659164,
+            "absolute_gap": 0.07724662934852178
+          }
+        ]
+      }
+    }
+  },
+  "decision_threshold_candidates": {
+    "0.35_0.65": {
+      "real_below": 0.35,
+      "fake_at_or_above": 0.65,
+      "decided_coverage": 0.874,
+      "uncertain_coverage": 0.126,
+      "decided_only_accuracy": 0.9130434782608695
+    },
+    "0.40_0.60": {
+      "real_below": 0.4,
+      "fake_at_or_above": 0.6,
+      "decided_coverage": 0.914,
+      "uncertain_coverage": 0.086,
+      "decided_only_accuracy": 0.9037199124726477
+    },
+    "0.45_0.55": {
+      "real_below": 0.45,
+      "fake_at_or_above": 0.55,
+      "decided_coverage": 0.962,
+      "uncertain_coverage": 0.038,
+      "decided_only_accuracy": 0.8814968814968815
+    }
+  },
+  "notes": [
+    "ECE uses 10 equal-width bins; lower is better.",
+    "Reliability is compared with correctness of each agent's threshold-0.5 prediction.",
+    "This is a diagnostic on dev data, not proof of perfect calibration.",
+    "Threshold candidates are diagnostic only; do not select based on test results."
+  ]
+}

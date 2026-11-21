@@ -1,0 +1,64 @@
+{
+  "dataset": "FakeAVCeleb",
+  "checkpoint": "D:\\ics-av-deepfake_team_share\\proposed_model\\outputs\\proposed_reliability_best.pt",
+  "samples": 494,
+  "threshold": 0.5,
+  "models": {
+    "V-V Agent": {
+      "accuracy_percent": 79.55,
+      "precision_fake_percent": 79.72,
+      "recall_fake_percent": 99.75,
+      "f1_fake_percent": 88.61,
+      "roc_auc_percent": 45.13,
+      "average_precision_percent": 76.98,
+      "confusion_matrix": {
+        "TN": 0,
+        "FP": 100,
+        "FN": 1,
+        "TP": 393
+      }
+    },
+    "A-A Agent": {
+      "accuracy_percent": 78.34,
+      "precision_fake_percent": 89.1,
+      "recall_fake_percent": 82.99,
+      "f1_fake_percent": 85.94,
+      "roc_auc_percent": 75.68,
+      "average_precision_percent": 91.12,
+      "confusion_matrix": {
+        "TN": 60,
+        "FP": 40,
+        "FN": 67,
+        "TP": 327
+      }
+    },
+    "A-V Agent": {
+      "accuracy_percent": 79.76,
+      "precision_fake_percent": 79.76,
+      "recall_fake_percent": 100.0,
+      "f1_fake_percent": 88.74,
+      "roc_auc_percent": 35.82,
+      "average_precision_percent": 73.5,
+      "confusion_matrix": {
+        "TN": 0,
+        "FP": 100,
+        "FN": 0,
+        "TP": 394
+      }
+    },
+    "Judge Fusion": {
+      "accuracy_percent": 72.27,
+      "precision_fake_percent": 87.03,
+      "recall_fake_percent": 76.65,
+      "f1_fake_percent": 81.51,
+      "roc_auc_percent": 71.74,
+      "average_precision_percent": 90.37,
+      "confusion_matrix": {
+        "TN": 55,
+        "FP": 45,
+        "FN": 92,
+        "TP": 302
+      }
+    }
+  }
+}

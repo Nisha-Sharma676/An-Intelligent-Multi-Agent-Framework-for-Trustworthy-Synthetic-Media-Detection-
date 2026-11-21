@@ -1,0 +1,85 @@
+{
+  "split": "dev",
+  "checkpoint": "D:\\ics-av-deepfake_team_share\\proposed_model\\outputs\\proposed_reliability_best.pt",
+  "samples": 500,
+  "method": "Inference-time zero masking. This is diagnostic ablation, not retraining with individual modalities.",
+  "experiments": {
+    "full_av": {
+      "accuracy": 0.856,
+      "precision_fake": 0.864406779661017,
+      "recall_fake": 0.9571045576407506,
+      "f1_fake": 0.9083969465648855,
+      "tp": 357,
+      "tn": 71,
+      "fp": 56,
+      "fn": 16,
+      "roc_auc": 0.9202887842773004
+    },
+    "visual_only": {
+      "accuracy": 0.614,
+      "precision_fake": 0.835820895522388,
+      "recall_fake": 0.6005361930294906,
+      "f1_fake": 0.6989079563182526,
+      "tp": 224,
+      "tn": 83,
+      "fp": 44,
+      "fn": 149,
+      "roc_auc": 0.689957991176036
+    },
+    "audio_only": {
+      "accuracy": 0.746,
+      "precision_fake": 0.746,
+      "recall_fake": 1.0,
+      "f1_fake": 0.854524627720504,
+      "tp": 373,
+      "tn": 0,
+      "fp": 127,
+      "fn": 0,
+      "roc_auc": 0.8754090055097
+    },
+    "audiovisual_only": {
+      "accuracy": 0.746,
+      "precision_fake": 0.746,
+      "recall_fake": 1.0,
+      "f1_fake": 0.854524627720504,
+      "tp": 373,
+      "tn": 0,
+      "fp": 127,
+      "fn": 0,
+      "roc_auc": 0.603723797259927
+    },
+    "without_visual": {
+      "accuracy": 0.746,
+      "precision_fake": 0.746,
+      "recall_fake": 1.0,
+      "f1_fake": 0.854524627720504,
+      "tp": 373,
+      "tn": 0,
+      "fp": 127,
+      "fn": 0,
+      "roc_auc": 0.8803487365687869
+    },
+    "without_audio": {
+      "accuracy": 0.568,
+      "precision_fake": 0.8284518828451883,
+      "recall_fake": 0.5308310991957105,
+      "f1_fake": 0.6470588235294118,
+      "tp": 198,
+      "tn": 86,
+      "fp": 41,
+      "fn": 175,
+      "roc_auc": 0.6902535306411095
+    },
+    "without_audiovisual": {
+      "accuracy": 0.864,
+      "precision_fake": 0.8588235294117647,
+      "recall_fake": 0.9785522788203753,
+      "f1_fake": 0.9147869674185463,
+      "tp": 365,
+      "tn": 67,
+      "fp": 60,
+      "fn": 8,
+      "roc_auc": 0.9199299149268539
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "source_predictions": "proposed_model\\outputs\\proposed_test_results.json",
+  "source_metadata": "D:\\LAV-DF\\LAV-DF\\metadata.json",
+  "matched_test_videos": 1144,
+  "missing_metadata_matches": 0,
+  "decision_counts": {
+    "REAL": 203,
+    "FAKE": 884,
+    "UNCERTAIN": 57
+  },
+  "uncertain": {
+    "count": 57,
+    "coverage_percent": 4.9825,
+    "correctness_not_applicable": true,
+    "note": "UNCERTAIN rows are abstentions; evaluate separately rather than count as REAL/FAKE."
+  },
+  "decided_only": {
+    "count": 1087,
+    "coverage_percent": 95.0175,
+    "accuracy": 0.8648
+  },
+  "agent_reliability_analysis": {
+    "vv": {
+      "n": 1144,
+      "accuracy_at_threshold_0_5": 0.7386,
+      "mean_reliability_all": 0.2244,
+      "mean_reliability_when_correct": 0.2461,
+      "mean_reliability_when_wrong": 0.1628,
+      "reliability_correct_minus_wrong": 0.0833,
+      "probability_brier_score": 0.1789,
+      "note": "Reliability is not proven calibrated by these summaries alone."
+    },
+    "aa": {
+      "n": 1144,
+      "accuracy_at_threshold_0_5": 0.8208,
+      "mean_reliability_all": 0.9491,
+      "mean_reliability_when_correct": 0.9493,
+      "mean_reliability_when_wrong": 0.9485,
+      "reliability_correct_minus_wrong": 0.0007,
+      "probability_brier_score": 0.1338,
+      "note": "Reliability is not proven calibrated by these summaries alone."
+    },
+    "av": {
+      "n": 1144,
+      "accuracy_at_threshold_0_5": 0.7386,
+      "mean_reliability_all": 0.0509,
+      "mean_reliability_when_correct": 0.0508,
+      "mean_reliability_when_wrong": 0.0511,
+      "reliability_correct_minus_wrong": -0.0003,
+      "probability_brier_score": 0.1953,
+      "note": "Reliability is not proven calibrated by these summaries alone."
+    }
+  },
+  "limitations": [
+    "This script analyzes existing predictions only; it does not train or modify the model.",
+    "The model's agent inputs are feature representations, not explicit synchronization scores.",
+    "A reliability score being high or low does not by itself establish calibrated trustworthiness.",
+    "UNCERTAIN decisions are excluded from decided-only accuracy."
+  ]
+}

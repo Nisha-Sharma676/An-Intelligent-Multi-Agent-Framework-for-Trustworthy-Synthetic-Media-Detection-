@@ -1,0 +1,30 @@
+{
+  "videos_compared": 1144,
+  "ground_truth_segments": 952,
+  "evaluator": "Global confidence ranking; one-to-one greedy matching to highest-IoU unmatched ground truth; IoU >= threshold; precision-recall envelope integration",
+  "baseline_proposals_per_video": {
+    "min": 100,
+    "max": 100
+  },
+  "proposed_proposals_per_video": {
+    "min": 0,
+    "max": 29
+  },
+  "AP": {
+    "0.5": {
+      "BMN_baseline": 0.0924572152619611,
+      "proposed_localizer": 0.048179973436675405,
+      "difference": -0.044277241825285696
+    },
+    "0.75": {
+      "BMN_baseline": 0.011953069376160069,
+      "proposed_localizer": 0.004229372479588489,
+      "difference": -0.0077236968965715795
+    },
+    "0.95": {
+      "BMN_baseline": 7.414193943448058e-06,
+      "proposed_localizer": 2.9042497138666073e-05,
+      "difference": 2.1628303195218014e-05
+    }
+  }
+}

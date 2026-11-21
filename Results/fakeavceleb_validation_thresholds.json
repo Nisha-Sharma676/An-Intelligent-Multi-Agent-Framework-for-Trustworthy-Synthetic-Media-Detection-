@@ -1,0 +1,77 @@
+{
+  "validation_samples": 408,
+  "threshold_results": {
+    "V-V Agent": {
+      "best_validation_threshold": {
+        "threshold": 0.67,
+        "accuracy_percent": 68.87,
+        "balanced_accuracy_percent": 50.87,
+        "precision_fake_percent": 80.73,
+        "recall_fake_percent": 80.49,
+        "f1_fake_percent": 80.61
+      },
+      "default_0.50": {
+        "threshold": 0.5,
+        "accuracy_percent": 80.39,
+        "balanced_accuracy_percent": 50.0,
+        "precision_fake_percent": 80.39,
+        "recall_fake_percent": 100.0,
+        "f1_fake_percent": 89.13
+      }
+    },
+    "A-A Agent": {
+      "best_validation_threshold": {
+        "threshold": 0.54,
+        "accuracy_percent": 80.15,
+        "balanced_accuracy_percent": 76.31,
+        "precision_fake_percent": 91.86,
+        "recall_fake_percent": 82.62,
+        "f1_fake_percent": 87.0
+      },
+      "default_0.50": {
+        "threshold": 0.5,
+        "accuracy_percent": 81.86,
+        "balanced_accuracy_percent": 75.49,
+        "precision_fake_percent": 90.97,
+        "recall_fake_percent": 85.98,
+        "f1_fake_percent": 88.4
+      }
+    },
+    "A-V Agent": {
+      "best_validation_threshold": {
+        "threshold": 0.0,
+        "accuracy_percent": 80.39,
+        "balanced_accuracy_percent": 50.0,
+        "precision_fake_percent": 80.39,
+        "recall_fake_percent": 100.0,
+        "f1_fake_percent": 89.13
+      },
+      "default_0.50": {
+        "threshold": 0.5,
+        "accuracy_percent": 80.39,
+        "balanced_accuracy_percent": 50.0,
+        "precision_fake_percent": 80.39,
+        "recall_fake_percent": 100.0,
+        "f1_fake_percent": 89.13
+      }
+    },
+    "Judge Fusion": {
+      "best_validation_threshold": {
+        "threshold": 0.67,
+        "accuracy_percent": 74.02,
+        "balanced_accuracy_percent": 74.39,
+        "precision_fake_percent": 92.37,
+        "recall_fake_percent": 73.78,
+        "f1_fake_percent": 82.03
+      },
+      "default_0.50": {
+        "threshold": 0.5,
+        "accuracy_percent": 75.49,
+        "balanced_accuracy_percent": 69.63,
+        "precision_fake_percent": 89.04,
+        "recall_fake_percent": 79.27,
+        "f1_fake_percent": 83.87
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "experiment": "BMN proposal score multiplied by video-level fake probability",
+  "videos_matched": 1144,
+  "method_note": "Exploratory post-hoc re-ranking. Video-level probabilities do not provide segment-level evidence or improve timestamps directly.",
+  "baseline_temporal_AP": {
+    "0.5": 0.09220712631940842,
+    "0.75": 0.011989552527666092,
+    "0.95": 7.414194442389999e-06
+  },
+  "reranked_temporal_AP": {
+    "0.5": 0.09788733720779419,
+    "0.75": 0.013822626322507858,
+    "0.95": 6.7690580181078985e-06
+  },
+  "change_in_AP": {
+    "0.5": 0.005680210888385773,
+    "0.75": 0.0018330737948417664,
+    "0.95": -6.451364242821e-07
+  }
+}

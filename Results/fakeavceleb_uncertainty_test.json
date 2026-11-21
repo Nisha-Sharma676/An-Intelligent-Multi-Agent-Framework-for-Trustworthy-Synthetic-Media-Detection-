@@ -1,0 +1,41 @@
+{
+  "dataset": "FakeAVCeleb",
+  "split": "test",
+  "samples": 494,
+  "checkpoint": "D:\\ics-av-deepfake_team_share\\proposed_model\\outputs\\proposed_best.pt",
+  "model": "Judge Fusion",
+  "threshold_source": "Validation set only",
+  "test_threshold_tuning": false,
+  "actual_fake_samples": 394,
+  "actual_real_samples": 100,
+  "results": {
+    "baseline_0.40_0.60": {
+      "real_below": 0.4,
+      "fake_at_or_above": 0.6,
+      "total_samples": 494,
+      "decided_samples": 449,
+      "uncertain_samples": 45,
+      "real_predictions": 123,
+      "fake_predictions": 326,
+      "coverage_percent": 90.89,
+      "uncertainty_rate_percent": 9.11,
+      "decided_only_accuracy_percent": 75.28,
+      "decided_only_balanced_accuracy_percent": 68.3,
+      "selective_risk_percent": 24.72
+    },
+    "optimized_validation_0.52_0.78": {
+      "real_below": 0.52,
+      "fake_at_or_above": 0.78,
+      "total_samples": 494,
+      "decided_samples": 408,
+      "uncertain_samples": 86,
+      "real_predictions": 148,
+      "fake_predictions": 260,
+      "coverage_percent": 82.59,
+      "uncertainty_rate_percent": 17.41,
+      "decided_only_accuracy_percent": 71.57,
+      "decided_only_balanced_accuracy_percent": 71.17,
+      "selective_risk_percent": 28.43
+    }
+  }
+}

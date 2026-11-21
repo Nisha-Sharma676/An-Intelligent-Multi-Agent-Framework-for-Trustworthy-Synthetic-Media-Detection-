@@ -1,0 +1,8 @@
+{
+  "split": "train",
+  "feature_files_found": 2500,
+  "videos_checked": 2500,
+  "fake_periods_checked": 2135,
+  "issue_count": 0,
+  "issue_examples": []
+}
